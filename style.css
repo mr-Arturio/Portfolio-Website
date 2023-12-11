@@ -42,7 +42,7 @@ nav {
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 a {
@@ -52,10 +52,10 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: rgb(0, 93, 183);
   text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-underline-offset: 0.75rem;
+  text-decoration-color: rgb(255, 215, 0);
 }
 
 .logo {
