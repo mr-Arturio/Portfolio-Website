@@ -159,7 +159,6 @@ section {
 
 .section-container {
   display: flex;
- 
 }
 
 /* PROFILE SECTION */
@@ -289,16 +288,24 @@ section {
   display: flex;
 }
 
+.about-containers .icon {
+  cursor: default;
+}
+
 .about-pic {
   border-radius: 2rem;
-    width: 400px; /* set your desired width */
-    height: 400px; /* maintain aspect ratio */
+  width: 400px; /* set your desired width */
+  height: 400px; /* maintain aspect ratio */
 }
 
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+}
+
+#contact .arrow {
+  transform: rotate(180deg);
 }
 
 .details-container {
@@ -366,7 +373,7 @@ article .icon {
 
 #projects {
   position: relative;
-  padding-bottom:  4rem;
+  padding-bottom: 4rem;
 }
 
 .color-container {
@@ -398,6 +405,7 @@ article .icon {
   flex-direction: column;
   height: 80vh;
   padding-top: 5rem;
+  position: relative;
 }
 
 .contact-info-upper-container {
