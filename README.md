@@ -6,7 +6,9 @@ Decided to build something simple until I'll create something wild and creativeð
 - make everything more compact
 - fix/edit about me text
 - fix images
-- add progects with imgs and links
+- add projects with imgs and links
+- add project descriptions
+- add publications container in about me container
 - change font style?
 - add stack icons instead of text
 - stack categories? Front end, Back end? or all in one
