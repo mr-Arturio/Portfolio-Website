@@ -159,6 +159,7 @@ section {
 
 .section-container {
   display: flex;
+ 
 }
 
 /* PROFILE SECTION */
@@ -290,6 +291,8 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+    width: 400px; /* set your desired width */
+    height: 400px; /* maintain aspect ratio */
 }
 
 .arrow {
@@ -323,6 +326,7 @@ section {
 
 #experience {
   position: relative;
+  padding-bottom: 4rem;
 }
 
 .experience-sub-title {
@@ -362,6 +366,7 @@ article .icon {
 
 #projects {
   position: relative;
+  padding-bottom:  4rem;
 }
 
 .color-container {
@@ -391,7 +396,8 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 80vh;
+  padding-top: 5rem;
 }
 
 .contact-info-upper-container {

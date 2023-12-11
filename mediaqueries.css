@@ -27,6 +27,10 @@
   .section-container {
     display: block;
   }
+  .about-pic {
+    width: 275px;
+    height: 275px;
+  }
   .arrow {
     display: none;
   }
@@ -85,6 +89,10 @@
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+  }
+  .about-pic {
+    width: auto;
+    height: auto;
   }
   .section__pic-container {
     width: auto;
