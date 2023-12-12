@@ -15,4 +15,5 @@ Decided to build something simple until I'll create something wild and creative�
 - add dark mode
 - add AI? feature
 - add random fact about me
-- deploy ❗  
+- deploy ✅  
+- short URL?
