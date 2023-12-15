@@ -17,3 +17,5 @@ Decided to build something simple until I'll create something wild and creativeð
 - add random fact about me
 - deploy âœ…  
 - short URL?
+
+For free open source icons & illustrations - https://iconduck.com/
