@@ -51,7 +51,9 @@ a {
   text-decoration-color: white;
 }
 
-a:hover {
+
+li a:hover, p a:hover {
+  cursor: pointer;
   color: rgb(0, 93, 183);
   text-decoration: underline;
   text-underline-offset: 0.75rem;
