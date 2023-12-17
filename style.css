@@ -51,6 +51,9 @@ p {
   color: var(--secondary-color-2);
 }
 
+h3, h4 {
+  color: var(--secondary-color);
+}
 /* TRANSITION */
 
 a,
@@ -94,10 +97,39 @@ li a:hover, p a:hover {
 
 .logo {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 .logo:hover {
   cursor: default;
+}
+
+body[theme="light"] .logo {
+    color: black;
+}
+
+/* Dark mode styles for logo */
+body[theme="dark"] .logo {
+  visibility: hidden;
+  position: relative;
+}
+
+body[theme="dark"] .logo::before {
+  content: 'Artur';
+  color: rgb(0, 93, 183);
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+body[theme="dark"] .logo::after {
+  content: ' T';
+  color: rgb(255, 215, 0);
+  visibility: visible;
+  position: absolute;
+  left: calc(100% - 1ch); /* Adjust this value as needed */
+  top: 0;
 }
 
 /* HAMBURGER MENU */
