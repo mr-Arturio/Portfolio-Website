@@ -20,6 +20,8 @@ Decided to build something simple until I'll create something wild and creative�
 - add random fact about me
 - deploy ✅  
 - short URL ✅
+- make links open in a new window
+- fix dark mode icons
 
 <br/>
 For free open-source icons & illustrations - https://iconduck.com/
