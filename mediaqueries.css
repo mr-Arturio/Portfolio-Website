@@ -13,7 +13,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   #desktop-nav {
     display: none;
   }
@@ -26,7 +26,11 @@
 
   }
 
-  #profile,
+  #profile {
+display: flex;
+  }
+
+
   .section-container {
     display: block;
   }
@@ -60,6 +64,7 @@
     height: 40vh;
   }
   #profile {
+    display: block;
     height: 83vh;
     margin-bottom: 0;
   }
