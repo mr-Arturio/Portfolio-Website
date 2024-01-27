@@ -462,9 +462,15 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   width: 85%;
   height: 90%;
+}
+
+.publication-img {
+  border-radius: 1.5rem;
+  width: 35%;
+  height: 50%;
 }
 
 .project-title {
