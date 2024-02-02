@@ -395,6 +395,14 @@ section {
   text-align: center;
 }
 
+.project-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  min-height: 300px; 
+}
+
+
 .section-container {
   gap: 4rem;
   height: 80%;
