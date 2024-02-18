@@ -51,3 +51,52 @@ function setLightMode() {
     icon.src = icon.getAttribute("src-light");
   });
 }
+
+// JavaScript for dynamic tooltip positioning and accessibility features
+document.addEventListener('DOMContentLoaded', (event) => {
+  const tooltips = document.querySelectorAll('.tooltip');
+
+  tooltips.forEach((tooltip) => {
+    const tooltipText = tooltip.querySelector('.tooltiptext');
+
+    // Make tooltips focusable
+    tooltip.setAttribute('tabindex', '0');
+
+    // Show tooltip on focus for keyboard accessibility
+    tooltip.addEventListener('focus', () => {
+      tooltipText.style.visibility = 'visible';
+      tooltipText.style.opacity = '1';
+    });
+
+    // Hide tooltip on blur
+    tooltip.addEventListener('blur', () => {
+      tooltipText.style.visibility = 'hidden';
+      tooltipText.style.opacity = '0';
+    });
+
+    // Show tooltip on touch for touch devices
+    tooltip.addEventListener('touchstart', () => {
+      tooltipText.style.visibility = 'visible';
+      tooltipText.style.opacity = '1';
+    });
+
+    // Hide tooltip on touch end
+    tooltip.addEventListener('touchend', () => {
+      setTimeout(() => {
+        tooltipText.style.visibility = 'hidden';
+        tooltipText.style.opacity = '0';
+      }, 1500); // Delay to allow reading before hiding
+    });
+  });
+
+  // Dismiss tooltips on outside click
+  document.addEventListener('click', (e) => {
+    if (!e.target.matches('.tooltip') && !e.target.matches('.tooltiptext')) {
+      tooltips.forEach((tooltip) => {
+        const tooltipText = tooltip.querySelector('.tooltiptext');
+        tooltipText.style.visibility = 'hidden';
+        tooltipText.style.opacity = '0';
+      });
+    }
+  });
+});

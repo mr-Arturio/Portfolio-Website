@@ -550,26 +550,30 @@ footer p {
   /* display: inline-block; */
 }
 
+/* Tooltip styles with delay, animation, shadow, and padding */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  min-width: 120px; /* Use min-width to accommodate longer text */
   background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 10px; /* Increased padding for better spacing */
   position: absolute;
   z-index: 1;
   bottom: 125%;
   left: 50%;
-  margin-left: -60px;
+  transform: translateX(-50%) scale(0.95); /* Center tooltip and start with scale */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* Shadow for depth */
   opacity: 0;
-  transition: opacity 0.3s, visibility 0.3s;
-  transition-delay: 0.3s;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for opacity and transform */
+  transition-delay: 0.5s; /* Delay the appearance of the tooltip */
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext,
+.tooltip:focus .tooltiptext { /* Added focus for keyboard accessibility */
   visibility: visible;
   opacity: 1;
-  transition-delay: 0s;
+  transform: translateX(-50%) scale(1); /* Center and scale for animation */
+  transition-delay: 0s; /* No delay when hiding the tooltip */
 }
